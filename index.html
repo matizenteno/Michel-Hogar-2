@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Michel Hogar — Cortinas, visillos, alfombras, manteles y más para el hogar. Envíos a todo Chile vía Starken en 3-4 días. Marca Doral oficial." />
+  <title>Michel Hogar | Hogar Premium en Chile</title>
+  <link rel="icon" type="image/png" href="images/logo-michel-hogar.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio" aria-label="Michel Hogar - Inicio">
+        <img src="images/logo-michel-hogar.png" alt="Michel Hogar" class="logo-img" />
+        <div class="logo-text">
+          <strong>Michel Hogar</strong>
+          <small>Todo para tu hogar</small>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#envios">Envíos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" id="open-cart" aria-label="Abrir carrito">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          Carrito&nbsp;<span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1618219740975-d40978bb7378?auto=format&fit=crop&w=1600&q=80" alt="Ambiente hogareño con cortinas, alfombra y decoración cálida" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-eyebrow">Envíos a todo Chile vía Starken</span>
+      <h1>Transforma tu hogar<br/>con estilo y elegancia</h1>
+      <p>Cortinas, alfombras, manteles, ollas y mucho más. Productos premium de marcas como Doral para cada rincón de tu casa.</p>
+      <div class="hero-actions">
+        <a href="#productos" class="btn btn-olive">Ver productos</a>
+        <a href="https://wa.me/56940692667" target="_blank" rel="noopener" class="btn btn-outline-white">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.862L.054 23.947c-.077.32.203.6.523.523l6.085-1.479A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 01-5.003-1.367l-.358-.214-3.714.901.916-3.651-.234-.375A9.786 9.786 0 012.182 12c0-5.414 4.404-9.818 9.818-9.818 5.414 0 9.818 4.404 9.818 9.818 0 5.414-4.404 9.818-9.818 9.818z"/></svg>
+          Consultar por WhatsApp
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>+500</strong><span>Clientes satisfechos</span></div>
+        <div class="stat"><strong>Doral</strong><span>Marca oficial</span></div>
+        <div class="stat"><strong>3–4 días</strong><span>Envío Starken</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <div><strong>Envío Starken</strong><span>Todo Chile, 3–4 días hábiles</span></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div><strong>Compra segura</strong><span>Garantía en todos tus pedidos</span></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        <div><strong>Marca Doral</strong><span>Calidad premium certificada</span></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        <div><strong>Atención WhatsApp</strong><span>Respuesta rápida y personalizada</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products-section" id="productos">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Nuestros productos</span>
+        <h2>Todo lo que tu hogar necesita</h2>
+        <p>Selección premium de productos para decorar y equipar cada rincón de tu casa</p>
+      </div>
+
+      <!-- Toolbar: filtros + búsqueda -->
+      <div class="products-toolbar">
+        <div class="product-filters" id="product-filters" role="toolbar" aria-label="Filtrar por categoría"></div>
+        <label class="product-search-wrap" aria-label="Buscar productos">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+          <input type="search" id="product-search" placeholder="Buscar producto..." autocomplete="off" />
+        </label>
+      </div>
+
+      <div class="products-grid" id="products-grid"></div>
+      <div class="products-empty" id="products-empty" hidden>
+        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+        <p><strong>No encontramos productos</strong></p>
+        <p>Prueba con otra categoría o cambia los términos de búsqueda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHIPPING -->
+  <section class="shipping-section" id="envios">
+    <div class="container shipping-inner">
+      <div class="shipping-text">
+        <span class="eyebrow">Envíos a todo Chile</span>
+        <h2>Recibe tu pedido en la puerta de tu casa</h2>
+        <p>Despachamos con <strong>Starken</strong>, la empresa de transporte más confiable de Chile. Tu pedido llegará en <strong>3 a 4 días hábiles</strong> a cualquier ciudad del país.</p>
+        <ul class="shipping-list">
+          <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Cobertura nacional completa</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Número de seguimiento incluido</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Embalaje cuidadoso y seguro</li>
+          <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Seguimiento en tiempo real</li>
+        </ul>
+        <a href="https://wa.me/56940692667" target="_blank" rel="noopener" class="btn btn-olive">Consultar envío por WhatsApp</a>
+      </div>
+      <div class="shipping-visual">
+        <div class="shipping-card">
+          <div class="shipping-card-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Tu pedido en camino</h3>
+          <div class="shipping-steps">
+            <div class="step step-active">
+              <span class="step-dot"></span>
+              <div><strong>Pedido confirmado</strong><span>Día 0</span></div>
+            </div>
+            <div class="step step-active">
+              <span class="step-dot"></span>
+              <div><strong>En despacho</strong><span>Día 1</span></div>
+            </div>
+            <div class="step step-active">
+              <span class="step-dot"></span>
+              <div><strong>En tránsito Starken</strong><span>Día 2–3</span></div>
+            </div>
+            <div class="step">
+              <span class="step-dot"></span>
+              <div><strong>Entregado</strong><span>Día 3–4</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section class="brands-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Nuestras marcas</span>
+        <h2>Calidad en la que puedes confiar</h2>
+      </div>
+      <div class="brands-grid">
+        <div class="brand-card-featured">
+          <div class="brand-logo-wrap">
+            <span class="brand-name-big">DORAL</span>
+            <p>Distribuidores autorizados</p>
+          </div>
+          <div class="brand-info">
+            <strong>Marca oficial Doral</strong>
+            <p>Distribuidor autorizado de Doral, la marca líder en productos para el hogar en Chile. Calidad y durabilidad garantizadas en cada artículo.</p>
+          </div>
+        </div>
+        <div class="brand-features">
+          <div class="brand-feature">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <strong>Garantía oficial</strong>
+            <span>Productos con respaldo directo de la marca</span>
+          </div>
+          <div class="brand-feature">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="20 6 9 17 4 12"/></svg>
+            <strong>100% originales</strong>
+            <span>Nunca imitaciones, siempre auténtico</span>
+          </div>
+          <div class="brand-feature">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <strong>Alta durabilidad</strong>
+            <span>Materiales premium de larga vida útil</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="images/logo-michel-hogar.png" alt="Michel Hogar" class="logo-img logo-img-footer" />
+          <div class="logo-text">
+            <strong style="color:#fff">Michel Hogar</strong>
+            <small style="color:rgba(255,255,255,0.55)">Todo para tu hogar</small>
+          </div>
+        </div>
+        <p>Productos premium para el hogar con envío a todo Chile. Marcas de confianza a los mejores precios.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#envios">Envíos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto directo</h4>
+        <a href="https://wa.me/56940692667" target="_blank" rel="noopener" class="footer-wa">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.862L.054 23.947c-.077.32.203.6.523.523l6.085-1.479A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 01-5.003-1.367l-.358-.214-3.714.901.916-3.651-.234-.375A9.786 9.786 0 012.182 12c0-5.414 4.404-9.818 9.818-9.818 5.414 0 9.818 4.404 9.818 9.818 0 5.414-4.404 9.818-9.818 9.818z"/></svg>
+          +56 9 4069 2667
+        </a>
+        <p>Lunes a Sábado · 9:00 – 20:00 hrs</p>
+        <p>Santiago, Chile<br/>Envíos a todo el país</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 Michel Hogar. Todos los derechos reservados.</p>
+        <p>Envíos vía <strong>Starken</strong> · Distribuidor <strong>Doral</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART PANEL -->
+  <aside class="cart-panel" id="cart-panel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Mi carrito</h3>
+      <button class="icon-btn" id="close-cart" aria-label="Cerrar carrito">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total estimado</span>
+        <strong id="cart-total">$0</strong>
+      </div>
+      <p class="cart-shipping-note">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        Envío vía Starken · 3–4 días hábiles
+      </p>
+      <button class="btn-whatsapp-checkout" id="checkout-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.862L.054 23.947c-.077.32.203.6.523.523l6.085-1.479A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 01-5.003-1.367l-.358-.214-3.714.901.916-3.651-.234-.375A9.786 9.786 0 012.182 12c0-5.414 4.404-9.818 9.818-9.818 5.414 0 9.818 4.404 9.818 9.818 0 5.414-4.404 9.818-9.818 9.818z"/></svg>
+        Enviar pedido por WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/56940692667" target="_blank" rel="noopener" class="wa-float" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.862L.054 23.947c-.077.32.203.6.523.523l6.085-1.479A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 01-5.003-1.367l-.358-.214-3.714.901.916-3.651-.234-.375A9.786 9.786 0 012.182 12c0-5.414 4.404-9.818 9.818-9.818 5.414 0 9.818 4.404 9.818 9.818 0 5.414-4.404 9.818-9.818 9.818z"/></svg>
+    <span class="wa-float-text">¡Escríbenos!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
